@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Motion Capture Set Up</title>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="CreativeFacilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script>
+    $(function () {
+      $("#topMenu").load("topMenu.html");
+    });
+  </script>
+
+
+</head>
+
+
+<body id="preview">
+  <div id="topMenu"></div>
+
+  <div class="w3-container" style="margin-left:25%">
+    <div class="banner">
+    </div>
+
+
+
+    <h2 class="code-line" data-line-start=0 data-line-end=1><a id="Motion Capture Set Up"></a>Motion Capture Set Up</h2>
+    <br>
+    <p style="display:inline">The Motion Capture Lab is located at the back of the Virtual Reality lab in the <a href="https://www.gold.ac.uk/campus-map/ben-pimlott-building-bpb/">
+      Ben Pimlott Building</a>.</p>
+    <br>
+    <br>
+
+    <h4>Setting up Motive for use with MoCap suits</h4>
+    <ol>
+      <li>Turn on the PC at the motion capture workstation</li>
+      <li>Log in to the VR Lab account using the password (on the back of the display)</li>
+      <li>Open Motive</li>
+      <li>Quickstart> No > use last calibration. (to recalibrate follow the instructions in the calibration section on this page)</li>
+    </ol>
+
+    <h4>Instructions for calibrating the camera based system</h4>
+    <ol>
+      <li>Select new Calibration</li>
+      <li>Check that all of the reflective markers in the room are hidden from the cameras.</li>
+      <li>Look through the pane of cameras. Check for any markers still visible (red dots)</li>
+      <li>Reflections from the windows can also be the cause, if you are having problems cover them with the blackout panels.</li>
+      <li>If anything persists that you cannot find the source of, select 'mask visible' to cover them.</li>
+      <li>Be aware that this can cause issues with occlusion so only do this if you must.</li>
+      <li>Make sure all of the camera panes in the window are unselected, begin calibration.</li>
+      <li>Use the wooden calibration wand and begin slowly moving around in the space. Use slow figure of 8 movements to cover the entire space. </li>
+      <li>You are aiming to cover all the camera panes with coloured lines.</li>
+      <li>Use the calibration window to check how good the wanding quality is, you want a value of at least 2000 for each camera. To improve the values check whihc cameras have the lowest values and focus on the area in front of them, being sure to move slowly and smoothly.</li>
+      <li>When you are happy with the value hit 'calculate'</li>
+      <li>Place the black L shaped calibrator on the ground in the middle of the space, reflectors up</li>
+      <li>Hit 'set ground plane'</li>
+      <li>Save the calibration in a new folder, title it with the days date/ or something else memorable about the calibration.</li>
+    </ol>
+  </div>
+
+
+
+  <script>
+    function accordian(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
+</html>

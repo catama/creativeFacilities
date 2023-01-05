@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Creative Facilities</title>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="CreativeFacilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script>
+    $(function () {
+      $("#topMenu").load("topMenu.html");
+    });
+  </script>
+
+
+</head>
+
+
+<body id="preview">
+  <div id="topMenu"></div>
+
+  <div class="w3-container" style="margin-left:25%">
+    <div class="banner">
+    </div>
+
+    <h2>Creative Facilities</h2>
+    <br>
+    <h5><strong>Here you will find information on all the facilities and resources we have available for Computing staff
+        and students. </strong></h5>
+
+
+
+    <ul>
+
+
+      <li><a
+          href="https://learn.gold.ac.uk/course/view.php?id=6947">Creative Facilities page on learn.gold</a></li>
+      <li><a
+          href="http://booking.doc.gold.ac.uk">equipment booking system</a></li>
+    </ul>
+    </li>
+
+    <img src="images/SIML.JPEG">
+  </div>
+  <script>
+    function accordian(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
+</html>
